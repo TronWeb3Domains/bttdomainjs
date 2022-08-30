@@ -1,10 +1,10 @@
-# BitTorrent Web3 Domains
+# Syscoin Name Service
 
 Nodejs SDK
 
-Npm: https://www.npmjs.com/package/bttdomainjs
+Npm: https://www.npmjs.com/package/sysdomainjs
 
-Github: https://github.com/TronWeb3Domains/BitTorrent
+Github: https://github.com/SyscoinNameService/sysdomainjs
 
 Before installing the package you need to check and be sure to install the packages below:
 
@@ -15,19 +15,19 @@ npm install web3
 Install Package
 
 ```
-npm install bttdomainjs
+npm install sysdomainjs
 ```
 
 Call 
 ```
-const domainjs = require('bttdomainjs');
+const domainjs = require('sysdomainjs');
 ```
 
 Set config
 
-contractAddress: "0xa1019535e6b364523949eaf45f4b17521c1cb074"
+contractAddress: "0xA1019535E6b364523949EaF45F4B17521c1cb074"
 
-https://bttcscan.com/token/0xa1019535e6b364523949eaf45f4b17521c1cb074
+https://explorer.syscoin.org/token/0xA1019535E6b364523949EaF45F4B17521c1cb074
 
 ```
 const config = 
@@ -37,8 +37,8 @@ const config =
 		contractAddress: ""
 	},
 	mainnet:{ 
-		rpcUrl: "https://rpc.bittorrentchain.io",
-		contractAddress: "0xa1019535e6b364523949eaf45f4b17521c1cb074"
+		rpcUrl: "https://rpc.syscoin.org/",
+		contractAddress: "0xA1019535E6b364523949EaF45F4B17521c1cb074"
 	},
 	defaultNetwork: "mainnet"
 }
@@ -51,7 +51,7 @@ Install
 	const sdk = domainjs.SDK(config);
 
 	// change your domains
-	const _domain = "bittorrent.btt";
+	const _domain = "sysdomains.sys";
 	
 	// change your address
 	const _address = "0xbb48801EAF9947db8b49a96DEA231C5893125B9c";
